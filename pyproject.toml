@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "okto"
+version = "0.1.0"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = ["ollama", "prompt-toolkit", "rich"]
+
+[project.scripts]
+okto = "okto.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
